@@ -41,8 +41,7 @@
                 // Cordova is ready
                 document.addEventListener("deviceready", onDeviceReady, false);
                 function onDeviceReady() {
-                    
-                    ref.addEventListener('loadstart', function () { alert('start: ' + event.url); });
+                    appdiv.innerHTML = ref.addEventListener('loadstart', function () { alert('start: ' + event.url); });
                 }
             }                  
         });
@@ -50,9 +49,10 @@
     
 </head>
 <body>
-<div style=" width:320px;">
-<input type="button" id="btnback" value="Back to search" class="form-login-submit" />
+<div style="width:320px;" id="appdiv">
+
 </div>
-        <script type="text/javascript" src="Javascript/MainScript.js"></script>
+<input type="button" id="btnback" value="Back to search" class="form-login-submit" />
+<script type="text/javascript" src="Javascript/MainScript.js"></script>
 </body>
 </html>
