@@ -1,0 +1,466 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+
+/************************************************************************************
+MAIN STYLES
+*************************************************************************************/
+
+body {
+    background-color: #f4f4f4;
+}
+
+#login-box {
+	width:320px;
+	height: auto;
+    /*background: url(/images/login-bg.png) no-repeat;*/
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+#login-box img {
+	border:none;
+}
+
+#login-box h2 {
+	padding:0;
+	margin:0;
+	color: #371b1b;
+	font: bold 44px "Calibri", Calibri;
+    float: left;
+    width: 293px;
+    height: 93px;
+    margin-left: -0px;
+}
+
+    #login-box h3 {
+        font-family: 'Trebuchet MS';
+        font-size: 20px;
+        color: #000;
+        font-weight:normal;
+        padding-left:50px;
+    }
+
+
+#login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+}
+
+.login-box-field {
+	float: left;
+	display:inline;
+	
+	margin:0;
+	margin:0 0 7px 0;
+    font-family: Calibri;
+}
+.ad-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+    font-family: Calibri;
+}
+
+.form-login  {
+	width: 205px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #000000;
+	background-color:#e6e6e6;
+	font-size: 16px;
+	color: #ebebeb;
+}
+.inner-login {
+    padding-left: 15px;
+    -moz-border-radius: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    float: left;
+    background-color:#fff;
+}
+
+.form-login-username,.form-login-password {
+    width: 275px;
+    height: 30px;
+	border: 1px solid #ccc;
+	background-color:#fff;
+	font-size: 12px;
+	color: #000;
+    /*background: url(/images/username.gif) no-repeat;*/
+    font-family: Calibri;
+    padding: 2px 0px 0px 10px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.formAd
+{
+    width: 280px;
+    height: 50px;
+	border: 1px dashed #000;
+	background-color:#fff;
+	font-size: 20px;
+	color: #000;    
+    font-family: Calibri;
+    margin-bottom:0px;
+}
+.form-ddl
+{
+     width: 285px;
+    height: 30px;
+	border: 1px solid #ccc;
+	background-color:#fff;
+	font-size: 12px;
+	color: #000;
+    /*background: url(/images/username.gif) no-repeat;*/
+    font-family: Calibri;
+    padding: 2px 0px 0px 10px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.form-login-submit
+{       
+    width: 285px;
+    height: 36px;
+    float: right;
+    margin-left: 10px;
+	display:inline-block;		
+	position: relative;	
+	font-size:0.92em;
+	line-height:1.2307em;
+	text-decoration:none;
+	font-weight:bold;
+	color:#fff;
+	margin-top:5px;
+	padding:6px 15px 6px 15px;		
+	margin-left:-1px;	
+	color:#fff;
+	background-color:#b20000;
+	border-radius: 2px;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+}
+.login-box-field span {
+    font-size: 15px;
+}
+
+.login-box-field a {
+    color: #30b0d0;
+    font-size: 15px;
+}
+.login-box-options  {
+	clear:both;
+	padding-left:0px;
+	font-size: 11px; 
+	float: left;
+}
+
+.login-box-options a {
+	color: #000;
+	font-size: 11px;
+	float: left;
+	margin-top: 30px;
+}
+
+
+#status
+{
+    font-family:Verdana;
+    font-size:small;
+    color:Red;
+}
+
+.MobileView {
+    width: 250px;
+    height: 28px;
+    float: left;
+    font-family: calibri;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right:15px;
+    margin-top: 11px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    margin-left: 0px;    
+    font-size:15px;
+}
+.MobileView span {        
+        color: #000;
+        float: left;
+        margin-left:25px;
+        margin-top: 2px;
+
+}
+.MobileView a {
+            text-decoration: underline;
+            font-size: 15px;
+            color: #30b0d0;
+            float: left;
+            margin-left: 5px;
+}
+.RequestEmail
+{
+    font-size: 15px;
+    font-weight:normal;
+    color: #f00;
+    float: left;
+    padding-left: 25px;
+    background: url(../images/icon_error.gif) no-repeat;
+    margin-top: 12px;
+    font-family: Calibri;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+ .RequestEmail a 
+ {
+     font-family: calibri;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right:25px;
+    margin-top: 11px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: 0px; 
+    text-decoration: underline;
+    font-size: 15px;
+    color: #30b0d0;
+    float: left; 
+    font-weight:normal;   
+    
+ }
+
+
+/* ---------------------------------------------------- */
+/*                         Blocks                       */
+/* ---------------------------------------------------- */
+.white-block {
+  background: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #bdc1c6;
+  -moz-box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+  margin-bottom: 15px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  width: 100%;
+  min-width: 300px;
+}
+.open-menu .white-block {
+  min-width: 400px;
+}
+
+/* ---------------------------------------------------- */
+/*                        Content                       */
+/* ---------------------------------------------------- */
+#left-menu,
+#content-wrapper {
+  float: left;
+}
+
+#left-menu {
+  width: 75%;
+  background: #353535;
+  display: none;
+  line-height: 1;
+}
+
+#left-menu .search {
+  height: 37px; 
+  padding: 6px 7px 7px 7px;
+}
+#left-menu .search input {
+  width: 100%;
+  height: 37px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #0f0f0f;
+  box-shadow: inset 0 0 13px 0 rgba(0,0,0,0.25),0 1px 0 #555658;
+  -moz-box-shadow: inset 0 0 13px 0 rgba(0,0,0,0.25),0 1px 0 #555658;
+  -webkit-box-shadow: inset 0 0 13px 0 rgba(0,0,0,0.25),0 1px 0 #555658;
+  background: url(../images/icons.png) no-repeat -40px 10px #212223;
+  color: #cfcfcf;
+  padding: 5px 5px 5px 40px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+#left-menu .search input::-webkit-input-placeholder { color: #cfcfcf; }
+#left-menu .search input:-moz-placeholder { color: #cfcfcf; }
+#left-menu .search input::-moz-placeholder { color: #cfcfcf; }
+#left-menu .search input:-ms-input-placeholder { color: #cfcfcf; }
+#left-menu .search input.placeholder { color: #cfcfcf; }
+
+.wrapmenu {
+  overflow: auto;
+}
+
+#left-menu ul li {
+  clear: both;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+#left-menu ul li a,
+#left-menu a.current-account {
+  display: block;
+  font-size: 15px;
+  color: #d7d7d7;
+  padding: 8px;
+  background: #414141;
+  border-top: 1px solid #565656;
+  border-bottom: 1px solid #2a2a2a;
+  min-height: 30px;
+}
+#left-menu ul.accounts li a,
+#left-menu a.current-account {
+  min-height: 20px;
+}
+
+#left-menu ul li span {
+  margin-left: 5px;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+#left-menu ul.accounts li a img,
+#left-menu a.current-account img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#left-menu ul.accounts li a span,
+#left-menu a.current-account span {
+  display: inline-block;
+  padding-top: 0;
+  margin-left: 0;
+}
+
+#content-wrapper {
+  width: 100%;
+  float: left;
+  overflow: auto;
+  position: absolute;
+  background: #fff;
+}
+.open-menu #content-wrapper {
+  overflow: hidden;
+}
+
+
+/********** STATUS **********/
+/*List*/
+.status-list .head {
+  padding-bottom: 8px;
+  margin: 10px 10px 8px 10px;
+  border-bottom: 1px solid #c6c6c6;
+  line-height: 1.2;
+}
+.status-list .head a {
+  font-size: 14px;
+  font-weight: bold;
+}
+.status-list .head img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.status-list .head .date {
+  display: block;
+  font-size: 11px;
+  color: #5c5c5c;
+}
+.status-list .desc {
+  margin: 10px 10px 8px 10px;
+}
+.status-list .comments {
+  background: #efefef;
+  padding: 7px 10px;
+  font-size: 12px;
+  color: #878787;
+  -moz-border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+}
+.status-list .comments a {
+  color: #878787;
+  display: inline-block;
+  line-height: 14px;
+}
+.status-list .comments a.like {
+  color: #a40161;
+}
+
+/* ---------------------------------------------------- */
+/*                        Icons                         */
+/* ---------------------------------------------------- */
+.ico { background: url(../images/icons.png) no-repeat; }
+.ico-30 { width: 30px; height: 30px; }
+.ico .count { background-position: -281px -815px; width: 20px; height: 20px; position: absolute; font-size: 11px; text-align: center;
+  color: #d74141; font-weight: bold; padding: 2px 4px 0 0; }
+
+#menu { display: block; width: 44px; height: 30px; text-indent: -9999px; background-position: 0px -709px; }
+
+.i-news { background-position: 0 4px; }
+.i-messages { background-position: 0 -86px; }
+.i-groups { background-position: 0 -177px; }
+.i-photos { background-position: 0 -358px; }
+
+.i-settings { background-position: 0 -544px; }
+.i-logout { background-position: 0 -637px; }
+
+.i-white-add { background-position: 0 -774px; width: 47px; height: 32px; }
+
+/* ---------------------------------------------------- */
+/*                        Search Screen                         */
+/* ---------------------------------------------------- */
+
+.Search-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+    font-family: Calibri;
+}
+

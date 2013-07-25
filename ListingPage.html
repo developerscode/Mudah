@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mudah Mobile - Buy and Sell in the Malaysia</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+     <link rel="stylesheet" href="css/common-styles.css" type="text/css" />
+    <!-- media queries css -->
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript">
+        var keyword, region, group;
+        $(document).ready(function () {
+
+            var query = window.location.search.substring(1);
+
+            var parms = query.split('&');
+
+            for (var i = 0; i < parms.length; i++) {
+
+                var pos = parms[i].indexOf('=');
+
+                if (pos > 0) {
+
+                    var key = parms[i].substring(0, pos);
+                    var val = parms[i].substring(pos + 1);
+
+                    if (key == "q") {
+                        keyword = val;
+                    }
+                    else if (key == "ca") {
+                        region = val;
+                    }
+                    else if (key == "cg") {
+                        group = val;
+                    }
+
+                }
+                var urlwithparams = "http://m.mudah.my/list?q=" + keyword + "&ca=" + region + "&e=1&sa=&cg=" + group + "&female_subcat=&ps=&pe=&rs=&re=&o=0";
+                var ref = window.open(urlwithparams, '_blank', 'location=yes');
+                // Cordova is ready
+                document.addEventListener("deviceready", onDeviceReady, false);
+                function onDeviceReady() {
+                    
+                    ref.addEventListener('loadstart', function () { alert('start: ' + event.url); });
+                }
+            }                  
+        });
+    </script>   
+    
+</head>
+<body>
+<div style=" width:320px;">
+<input type="button" id="btnback" value="Back to search" class="form-login-submit" />
+</div>
+        <script type="text/javascript" src="Javascript/MainScript.js"></script>
+</body>
+</html>

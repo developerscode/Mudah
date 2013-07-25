@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <!-- disable iPhone inital scale -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Mudah Mobile - Buy and Sell in the Malaysiae</title>
+    <link rel="stylesheet" href="css/common-styles.css" type="text/css" />
+    <!-- media queries css -->
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css" />
+</head>
+<body style="background-color:#fff">
+    <div id="login-box">
+        <div class="inner-login">
+            <h2>
+                <img src="images/logo.png" alt="lifeSathi" /></h2>
+            <div class="inner-login">
+                <h3>
+                    Classifieds Helper</h3>
+                <label id="status">
+                </label>
+                <div class="login-box-field" style="margin-top: 20px;">
+                    <input type="text" id="searchtext" name="q" placeholder="Find by keywords..." class="form-login-username"
+                        value="" />
+                </div>
+                <div class="login-box-field">
+                    <select name="cg" id="catgroup" class="form-ddl" onchange="show_params(this);">
+                        <option value="0" selected>All Categories</option>
+                        <option value="1000">-- VEHICLES --</option>
+                        <option value="1020">Cars</option>
+                        <option value="1040">Motorcycles</option>
+                        <option value="1060">Car Accessories &amp; Parts</option>
+                        <option value="1100">Other Accessories &amp; Parts</option>
+                        <option value="1080">Other Vehicles</option>
+                        <option value="2000">-- PROPERTIES -- </option>
+                        <option value="2020">Apartments </option>
+                        <option value="2040">Houses </option>
+                        <option value="2060">Commercial Properties </option>
+                        <option value="2080">Land </option>
+                        <option value="2100">Rooms </option>
+                        <option value="2120">New Properties </option>
+                        <option value="2140">Properties for Rent </option>
+                        <option value="3000">-- ELECTRONICS -- </option>
+                        <option value="3020">Mobile Phones &amp; Gadgets </option>
+                        <option value="3040">TV/Audio/Video/Cameras </option>
+                        <option value="3060">Computers &amp; Accessories </option>
+                        <option value="4000">-- HOME &amp; PERSONAL ITEMS -- </option>
+                        <option value="4020">Home &amp; Garden </option>
+                        <option value="4040">Watches/Accessories </option>
+                        <option value="4060">For Children </option>
+                        <option value="4080">Clothes </option>
+                        <option value="4100">Female Items </option>
+                        <option value="4120">Health &amp; Slimming </option>
+                        <option value="5000">-- LEISURE/SPORTS/HOBBIES -- </option>
+                        <option value="5020">Sports &amp; Outdoors </option>
+                        <option value="5040">Hobby &amp; Collectibles </option>
+                        <option value="5060">Music/Movies/Books </option>
+                        <option value="5080">Pets </option>
+                        <option value="5100">Tickets </option>
+                        <option value="6000">-- BUSINESS TO BUSINESS -- </option>
+                        <option value="6020">Professional/Office Equipment </option>
+                        <option value="6040">Business for Sale </option>
+                        <option value="7000">-- JOBS &amp; SERVICES -- </option>
+                        <option value="7020">Jobs </option>
+                        <option value="7040">Services </option>
+                        <option value="9000">-- TRAVEL -- </option>
+                        <option value="9020">Accommodation </option>
+                        <option value="9040">Tours and Holidays </option>
+                        <option value="8000">-- -- -- </option>
+                        <option value="8040">Food </option>
+                        <option value="8020">Others </option>
+                    </select>
+                    </div>
+                    <div class="login-box-field">
+                    <select name="cg" id="region_select" class="form-ddl" onchange="get_region(this);">
+                         <option value="9_1_s" >Kuala Lumpur</option>
+                                                <option value="9_2_s" >Kuala Lumpur and neighbouring regions</option>
+                                                <option value="9_3_s"  selected>Entire Malaysia</option>                                        
+                                                <optgroup label="-- Regions --">                                        
+                                                <option value="1_1_s">Perlis</option>                                        
+                                                <option value="2_1_s">Kedah</option>                                        
+                                                <option value="3_1_s">Penang</option>                                        
+                                                <option value="4_1_s">Kelantan</option>                                        
+                                                <option value="5_1_s">Terengganu</option>                                        
+                                                <option value="6_1_s">Perak</option>                                        
+                                                <option value="7_1_s">Pahang</option>                                        
+                                                <option value="8_1_s">Selangor</option>                                        
+                                                <option value="10_1_s">Negeri Sembilan</option>                                        
+                                                <option value="11_1_s">Malacca</option>                                        
+                                                <option value="12_1_s">Johore</option>                                        
+                                                <option value="13_1_s">Sarawak</option>                                        
+                                                <option value="14_1_s">Sabah</option>                                        
+                                        </optgroup>
+                    </select>
+                    </div>
+                    <div class="login-box-field">
+                        <input id="btnSearch" type="submit" value="Search" class="form-login-submit" />
+                    </div>                    
+                    <div class="ad-box-field">
+                    <div class="formAd">
+                        <span style="padding-left:90px; padding-top:50px;">AD SPACE</span>
+                    </div>
+                    
+                    </div>
+                </div>
+              
+            </div>           
+        </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="Javascript/MainScript.js"></script>        
+</body>
+</html>
