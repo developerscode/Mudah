@@ -1,39 +1,34 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta charset="utf-8">
-
-<!-- disable iPhone inital scale -->
-<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=no" />
-<meta http-equiv="refresh" content="5; URL=Search.html">
-<title>Mudah Mobile - Buy and Sell in the Malaysia</title>
-<link rel="stylesheet" href="css/common-styles.css" type="text/css" />
-<!-- media queries css -->
-<link rel="stylesheet" href="css/media-queries.css" type="text/css" />
-
-<!-- html5.js for IE less than 9 -->
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<!-- css3-mediaqueries.js for IE less than 9 -->
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<style type="text/css">
-body {
-    background-image:url('images/opening_graphic.png');
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 480px;
-    margin:0; padding:0; border:0;
-}
-</style>
-
-</head>
-
-<body>
-	<div class="landingpageLogo"> 
-    </div>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">	
+    
+    <!-- CORE JS FILES -->
+    <script type="text/javascript" charset="utf-8" src="js/core/phonegap-1.2.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/core/jQuery.js"></script>
+        
+    <!-- PLUGINS -->
+    <script type="text/javascript" charset="utf-8" src="js/plugins/ChildBrowser.js"></script>
+    
+    <!-- OUR INIT -->
+    <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
+    
+    <!-- STYLE STUFF -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body onload="app.bodyLoad()"> <!-- CALL TO OUR JS TO LET IT KNOW THE APP IS LOADED -->
+  		<div id="header"></div>
+  		<div id="loginArea"> <!-- If we don't have a user we will show this -->
+			<div id="login" class="btn">Login</div>
+        </div>
+        <div id="status"> <!-- if we do have a user we will show this -->
+        <div id='statusHold' style='text-align:center; width:100%;'><img src='images/loader.gif' id="info"/></div>
+        	<textarea id="statusTXT"></textarea>
+            <div id="statusBTN" class="btn">share</div>
+        </div>
+  </body>
 </html>
