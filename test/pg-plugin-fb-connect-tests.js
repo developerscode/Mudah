@@ -1,5 +1,5 @@
 // replace this with your own APP_ID
-var APP_ID = '126462174095513' // <----( this is the PhoneGap-Facebook app id
+var APP_ID = '480064372101222' // <----( this is the PhoneGap-Facebook app id
 FB.initWithAppId(APP_ID)
 
 test('login', function loginToFacebook () {
